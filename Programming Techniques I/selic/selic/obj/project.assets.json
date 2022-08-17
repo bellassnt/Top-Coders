@@ -132,11 +132,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bella\\OneDrive\\Área de Trabalho\\Top Coders by Safra and Ada\\Top-Coders-Safra-Ada\\Programming Techniques I\\selic\\selic\\selic.csproj",
+      "projectUniqueName": "C:\\Users\\bella\\OneDrive\\Área de Trabalho\\Top Coders\\Top-Coders\\Programming Techniques I\\selic\\selic\\selic.csproj",
       "projectName": "selic",
-      "projectPath": "C:\\Users\\bella\\OneDrive\\Área de Trabalho\\Top Coders by Safra and Ada\\Top-Coders-Safra-Ada\\Programming Techniques I\\selic\\selic\\selic.csproj",
+      "projectPath": "C:\\Users\\bella\\OneDrive\\Área de Trabalho\\Top Coders\\Top-Coders\\Programming Techniques I\\selic\\selic\\selic.csproj",
       "packagesPath": "C:\\Users\\bella\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bella\\OneDrive\\Área de Trabalho\\Top Coders by Safra and Ada\\Top-Coders-Safra-Ada\\Programming Techniques I\\selic\\selic\\obj\\",
+      "outputPath": "C:\\Users\\bella\\OneDrive\\Área de Trabalho\\Top Coders\\Top-Coders\\Programming Techniques I\\selic\\selic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bella\\AppData\\Roaming\\NuGet\\NuGet.Config",

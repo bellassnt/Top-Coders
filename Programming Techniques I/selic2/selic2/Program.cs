@@ -1,6 +1,5 @@
 ﻿using System.Text.Json.Serialization;
 using System.Text.Json;
-using System.Data;
 
 namespace selic
 {
@@ -10,68 +9,114 @@ namespace selic
         {
             using var reader = new StreamReader("./selic.json");
             var json = reader.ReadToEnd();
+
             var data = JsonSerializer.Deserialize<List<Selic>>(json)!;
 
-            // Menor e maior valores da taxa Selic
-            var minSelic = data.Min(x => x.SelicRate);
-            var maxSelic = data.Max(x => x.SelicRate);
+            #region Lowest and highest Brazil's interest rate between 2012 and 2022
+            var lowestSelic = data.Min(x => x.SelicRate);
+            var highestSelic = data.Max(x => x.SelicRate);
+            Console.WriteLine($"O menor e o maior valor da taxa Selic é {lowestSelic} e {highestSelic}, respectivamente.\n");
+            #endregion
 
-            Console.WriteLine($"O menor e o maior valor da taxa Selic é {minSelic} e {maxSelic}, respectivamente.\n");
-
-            // Moda(s) da taxa Selic
+            #region Mode(s) of Brazil's interest rate between 2012 and 2022
             var groups = data.GroupBy(x => x.SelicRate)
-                             .OrderByDescending(x => x.Count())
-                             .Select(g => new 
-                             { 
-                                 Value = g.Key, Count = g.Count() 
-                             })
-                             .ToList();
+                              .OrderByDescending(x => x.Count())
+                              .Select(x => new
+                              {
+                                  Value = x.Key,
+                                  Count = x.Count()
+                              })
+                              .ToList();
 
-            var maxCount = groups.Max(g => g.Count);
+            var maxCount = groups.Max(x => x.Count);
 
-            var modes = groups.Where(g => g.Count == maxCount)
-                              .Select(g => g.Value);
+            var selicModes = groups.Where(x => x.Count == maxCount)
+                .Select(x => x.Value);
 
             Console.WriteLine("O(s) valor(es) mais comum(ns) da taxa Selic é(são): ");
-            foreach (var mode in modes)
+
+            foreach (var mode in selicModes)
                 Console.WriteLine(mode);
+            #endregion
 
-            // Média da taxa Selic
+            #region Brazil's interest rate average between 2012 and 2022
             var averageSelic = Math.Round(data.Average(x => x.SelicRate), 2);
+
             Console.WriteLine($"\nA média da taxa Selic é {averageSelic}.");
+            #endregion
 
-            //
-            var changingMonths = data.OrderBy(x => x.Date)
-                                     .Where((item, index) => index == 0 || item.SelicRate != data.ElementAt(index - 1).SelicRate)
-                                     .Select(x => x.Date.ToString("MM-yyyy"))
-                                     .Distinct()
-                                     .ToList();
+            #region Months in which Brazil's interest rate has varied between 2012 and 2022
+            Console.WriteLine("\nA Selic sofreu variação nos seguintes meses: ");
 
-            foreach(var changingMonth in changingMonths)
-                Console.WriteLine(changingMonth);
+            var monthsInWhichSelicHasVaried = data.OrderBy(x => x.Date)
+                .Where((item, index) => index == 0 || item.SelicRate != data.ElementAt(index - 1).SelicRate)
+                .Select(x => x.Date!.ToString("MM-yyyy"));
 
-            //
+            foreach (var month in monthsInWhichSelicHasVaried)
+                Console.WriteLine(month);
+            #endregion
+
+            #region Brazil's interest rate average per quarter since 2016
             var quarters = data!
                  .OrderBy(x => x.Date)
                  .Where(x => x.Date.Year >= 2016)
-                 .GroupBy(x => Math.Ceiling(x.Date.Month / 3m) + "/" + x.Date.Year)
+                 .GroupBy(x => $"{Math.Ceiling(x.Date.Month / 3m)}T{x.Date.Year}")
                  .Select(x => new
                  {
                      Quarter = x.Key,
-                     Average = x.Average(x => x.SelicRate)
+                     Average = Math.Round(x.Average(x => x.SelicRate), 2)
                  })
-                 .OrderBy(x => DateTime.Parse(x.Quarter))
                  .ToList();
 
-            //foreach (var quarter in quarters)
-            //{
-            //    var averageSelicQuarter = Math.Round(quarter.Average(x => x.SelicRate), 2);
-            //    Console.WriteLine($"{quarter.Key + 1}º quadrante: {averageSelicQuarter}.\n");
-            //}
+            Console.WriteLine("\nMédia da taxa Selic por trimestre desde 2016: ");
+            foreach (var quarter in quarters)
+                Console.WriteLine($"{quarter.Quarter}: {quarter.Average}");
+            #endregion
 
-            Console.ReadKey();
+            #region Lowest and highest Brazil's interest rate for each of Brazil's president between 2012 to 2022
+            var dilmasGovernmentStart = new DateTime(2012, 1, 1);
+            var dilmasGovernmentEnd = new DateTime(2016, 8, 31);
+            var dilmasLowestSelic = data.Where(x => x.Date >= dilmasGovernmentStart && x.Date <= dilmasGovernmentEnd)
+                .Min(x => x.SelicRate);
+            var dilmasHighestSelic = data.Where(x => x.Date >= dilmasGovernmentStart && x.Date <= dilmasGovernmentEnd)
+                .Max(x => x.SelicRate);
 
+            Console.WriteLine("\nDilma's government: ");
+            Console.WriteLine($"Lowest Selic rate: {dilmasLowestSelic}.");
+            Console.WriteLine($"Highest Selic rate: {dilmasHighestSelic}.");
 
+            var temersGovernmentStart = dilmasGovernmentEnd;
+            var temersGovernmentEnd = new DateTime(2019, 1, 1);
+            var temersLowestSelic = data.Where(x => x.Date >= temersGovernmentStart && x.Date <= temersGovernmentEnd)
+                .Min(x => x.SelicRate);
+            var temersHighestSelic = data.Where(x => x.Date >= temersGovernmentStart && x.Date <= temersGovernmentEnd)
+                .Max(x => x.SelicRate);
+
+            Console.WriteLine("\nTemer's government: ");
+            Console.WriteLine($"Lowest Selic rate: {temersLowestSelic}.");
+            Console.WriteLine($"Highest Selic rate: {temersHighestSelic}.");
+
+            var bolsonarosGovernmentStart = temersGovernmentEnd;
+            var bolsonarosGovernmentEnd = data.Last().Date;
+            var bolsonarosLowestSelic = data.Where(x => x.Date >= bolsonarosGovernmentStart && x.Date <= bolsonarosGovernmentEnd)
+                .Min(x => x.SelicRate);
+            var bolsonarosHighestSelic = data.Where(x => x.Date >= bolsonarosGovernmentStart && x.Date <= bolsonarosGovernmentEnd)
+                .Max(x => x.SelicRate);
+
+            Console.WriteLine("\nBolsonaro's government: ");
+            Console.WriteLine($"Lowest Selic rate: {bolsonarosLowestSelic}.");
+            Console.WriteLine($"Highest Selic rate: {bolsonarosHighestSelic}.");
+            #endregion
+
+            #region Brazil's interest rate average growth rate per month since March 2021
+            var filteredData = data.Where(x => x.Date > new DateTime(2021, 3, 1))
+                .Select(x => x.SelicRate)
+                .Distinct();
+
+            var averageGrowthRate = filteredData.Zip(filteredData.Skip(1), (a, b) => b - a).Average();
+
+            Console.WriteLine($"\nBrazil's interest rate average growth rate per month since March 2021: {Math.Round(averageGrowthRate, 2)} per month.");
+            #endregion
         }
     }
 

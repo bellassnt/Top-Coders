@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bella\\OneDrive\\Área de Trabalho\\Top Coders\\Top-Coders-Safra-Ada\\Programming Techniques I\\selic2\\selic2\\selic2.csproj",
+      "projectUniqueName": "C:\\Users\\bella\\OneDrive\\Área de Trabalho\\Top Coders\\Top-Coders\\Programming Techniques I\\selic2\\selic2\\selic2.csproj",
       "projectName": "selic2",
-      "projectPath": "C:\\Users\\bella\\OneDrive\\Área de Trabalho\\Top Coders\\Top-Coders-Safra-Ada\\Programming Techniques I\\selic2\\selic2\\selic2.csproj",
+      "projectPath": "C:\\Users\\bella\\OneDrive\\Área de Trabalho\\Top Coders\\Top-Coders\\Programming Techniques I\\selic2\\selic2\\selic2.csproj",
       "packagesPath": "C:\\Users\\bella\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bella\\OneDrive\\Área de Trabalho\\Top Coders\\Top-Coders-Safra-Ada\\Programming Techniques I\\selic2\\selic2\\obj\\",
+      "outputPath": "C:\\Users\\bella\\OneDrive\\Área de Trabalho\\Top Coders\\Top-Coders\\Programming Techniques I\\selic2\\selic2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bella\\AppData\\Roaming\\NuGet\\NuGet.Config",

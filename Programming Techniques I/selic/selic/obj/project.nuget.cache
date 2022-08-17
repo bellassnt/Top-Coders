@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iZptA2oTir3BEl+uQDgpA40mXkqQgCmOLMfz1MUtfimSuKim39KEZUMutHzWYJj47JLT64QEoQ8pEoegbZm4yw==",
+  "dgSpecHash": "/ZKEQTXnulE3JduieMBFyE6harq4ohZnm4Ymn+0Dw70Jvvfb6YLVBDIr+8yTGSUUMv/XTkEEe0cPGMCBo5g1OA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bella\\OneDrive\\Área de Trabalho\\Top Coders by Safra and Ada\\Top-Coders-Safra-Ada\\Programming Techniques I\\selic\\selic\\selic.csproj",
+  "projectFilePath": "C:\\Users\\bella\\OneDrive\\Área de Trabalho\\Top Coders\\Top-Coders\\Programming Techniques I\\selic\\selic\\selic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bella\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
     "C:\\Users\\bella\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
