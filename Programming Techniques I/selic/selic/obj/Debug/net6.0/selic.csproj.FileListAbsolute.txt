@@ -1,0 +1,38 @@
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\obj\Debug\net6.0\selic.csproj.AssemblyReference.cache
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\obj\Debug\net6.0\selic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\obj\Debug\net6.0\selic.AssemblyInfoInputs.cache
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\obj\Debug\net6.0\selic.AssemblyInfo.cs
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\obj\Debug\net6.0\selic.csproj.CoreCompileInputs.cache
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\bin\Debug\net6.0\selic.exe
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\bin\Debug\net6.0\selic.deps.json
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\bin\Debug\net6.0\selic.runtimeconfig.json
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\bin\Debug\net6.0\selic.dll
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\bin\Debug\net6.0\selic.pdb
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\obj\Debug\net6.0\selic.dll
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\obj\Debug\net6.0\refint\selic.dll
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\obj\Debug\net6.0\selic.pdb
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\obj\Debug\net6.0\selic.genruntimeconfig.cache
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\obj\Debug\net6.0\ref\selic.dll
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\bin\Debug\net6.0\selic.json
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Técnicas de programação I\selic\selic\obj\Debug\net6.0\selic.csproj.CopyComplete
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\bin\Debug\net6.0\selic.exe
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\bin\Debug\net6.0\selic.deps.json
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\bin\Debug\net6.0\selic.runtimeconfig.json
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\bin\Debug\net6.0\selic.dll
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\bin\Debug\net6.0\selic.pdb
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\obj\Debug\net6.0\selic.csproj.AssemblyReference.cache
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\obj\Debug\net6.0\selic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\obj\Debug\net6.0\selic.AssemblyInfoInputs.cache
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\obj\Debug\net6.0\selic.AssemblyInfo.cs
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\obj\Debug\net6.0\selic.csproj.CoreCompileInputs.cache
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\obj\Debug\net6.0\selic.csproj.CopyComplete
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\obj\Debug\net6.0\selic.dll
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\obj\Debug\net6.0\refint\selic.dll
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\obj\Debug\net6.0\selic.pdb
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\obj\Debug\net6.0\selic.genruntimeconfig.cache
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\obj\Debug\net6.0\ref\selic.dll
+C:\Users\bella\OneDrive\Área de Trabalho\Top Coders\Top-Coders-Safra-Ada\Programming Techniques I\selic\selic\bin\Debug\net6.0\selic.json

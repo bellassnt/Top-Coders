@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "selic", "selic\selic.csproj", "{2824C776-FA49-480A-91F1-116689DF51F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2824C776-FA49-480A-91F1-116689DF51F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2824C776-FA49-480A-91F1-116689DF51F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2824C776-FA49-480A-91F1-116689DF51F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2824C776-FA49-480A-91F1-116689DF51F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A15BD90-4A07-4DAE-A84C-E6A8D41BC703}
+	EndGlobalSection
+EndGlobal
