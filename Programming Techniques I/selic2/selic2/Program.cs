@@ -15,25 +15,25 @@ namespace selic
             #region Lowest and highest Brazil's interest rate between 2012 and 2022
             var lowestSelic = data.Min(x => x.SelicRate);
             var highestSelic = data.Max(x => x.SelicRate);
-            Console.WriteLine($"O menor e o maior valor da taxa Selic é {lowestSelic} e {highestSelic}, respectivamente.\n");
+            Console.WriteLine($"Lowest and highest Brazil's interest rate between 2012 and 2022: {lowestSelic} and {highestSelic}, respectively.\n");
             #endregion
 
             #region Mode(s) of Brazil's interest rate between 2012 and 2022
             var groups = data.GroupBy(x => x.SelicRate)
-                              .OrderByDescending(x => x.Count())
-                              .Select(x => new
-                              {
-                                  Value = x.Key,
-                                  Count = x.Count()
-                              })
-                              .ToList();
+                .OrderByDescending(x => x.Count())
+                .Select(x => new
+                {
+                    Value = x.Key,
+                    Count = x.Count()
+                })
+                .ToList();
 
             var maxCount = groups.Max(x => x.Count);
 
             var selicModes = groups.Where(x => x.Count == maxCount)
                 .Select(x => x.Value);
 
-            Console.WriteLine("O(s) valor(es) mais comum(ns) da taxa Selic é(são): ");
+            Console.WriteLine("Mode(s) of Brazil's interest rate between 2012 and 2022: ");
 
             foreach (var mode in selicModes)
                 Console.WriteLine(mode);
@@ -42,11 +42,11 @@ namespace selic
             #region Brazil's interest rate average between 2012 and 2022
             var averageSelic = Math.Round(data.Average(x => x.SelicRate), 2);
 
-            Console.WriteLine($"\nA média da taxa Selic é {averageSelic}.");
+            Console.WriteLine($"\nBrazil's interest rate average between 2012 and 2022: {averageSelic}.");
             #endregion
 
             #region Months in which Brazil's interest rate has varied between 2012 and 2022
-            Console.WriteLine("\nA Selic sofreu variação nos seguintes meses: ");
+            Console.WriteLine("\nMonths in which Brazil's interest rate has varied between 2012 and 2022: ");
 
             var monthsInWhichSelicHasVaried = data.OrderBy(x => x.Date)
                 .Where((item, index) => index == 0 || item.SelicRate != data.ElementAt(index - 1).SelicRate)
@@ -57,8 +57,7 @@ namespace selic
             #endregion
 
             #region Brazil's interest rate average per quarter since 2016
-            var quarters = data!
-                 .OrderBy(x => x.Date)
+            var quarters = data.OrderBy(x => x.Date)
                  .Where(x => x.Date.Year >= 2016)
                  .GroupBy(x => $"{Math.Ceiling(x.Date.Month / 3m)}T{x.Date.Year}")
                  .Select(x => new
@@ -68,7 +67,7 @@ namespace selic
                  })
                  .ToList();
 
-            Console.WriteLine("\nMédia da taxa Selic por trimestre desde 2016: ");
+            Console.WriteLine("\nBrazil's interest rate average per quarter since 2016: ");
             foreach (var quarter in quarters)
                 Console.WriteLine($"{quarter.Quarter}: {quarter.Average}");
             #endregion

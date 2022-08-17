@@ -47,16 +47,15 @@ namespace selic
             #endregion
 
             #region Brazil's interest rate average per quarter since 2016
-            var quarters = data!
-                 .OrderBy(x => x.Date)
-                 .Where(x => x.Date.Year >= 2016)
-                 .GroupBy(x => $"{Math.Ceiling(x.Date.Month / 3m)}T{x.Date.Year}")
-                 .Select(x => new
-                 {
-                     Quarter = x.Key,
-                     Average = Math.Round(x.Average(x => x.SelicRate), 2)
-                 })
-                 .ToList();
+            var quarters = data.OrderBy(x => x.Date)
+                .Where(x => x.Date.Year >= 2016)
+                .GroupBy(x => $"{Math.Ceiling(x.Date.Month / 3m)}T{x.Date.Year}")
+                .Select(x => new
+                {
+                    Quarter = x.Key,
+                    Average = Math.Round(x.Average(x => x.SelicRate), 2)
+                })
+                .ToList();
 
             Console.WriteLine("\nBrazil's interest rate average per quarter since 2016: ");
             foreach (var quarter in quarters)
