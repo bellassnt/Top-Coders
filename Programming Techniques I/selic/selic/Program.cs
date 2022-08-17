@@ -17,13 +17,13 @@ namespace selic
             #region Lowest and highest Brazil's interest rate between 2012 and 2022
             var lowestSelic = selic!.GetMin(data);
             var highestSelic = selic!.GetMax(data); 
-            Console.WriteLine($"O menor e o maior valor da taxa Selic é {lowestSelic} e {highestSelic}, respectivamente.\n");
+            Console.WriteLine($"Lowest and highest Brazil's interest rate between 2012 and 2022: {lowestSelic} and {highestSelic}, respectively.\n");
             #endregion
 
             #region Mode(s) of Brazil's interest rate between 2012 and 2022
             var selicModes = selic.GetModes(data);
 
-            Console.WriteLine("O(s) valor(es) mais comum(ns) da taxa Selic é(são): ");
+            Console.WriteLine("Mode(s) of Brazil's interest rate between 2012 and 2022: ");
 
             foreach (var mode in selicModes)
                 Console.WriteLine(mode);
@@ -32,11 +32,11 @@ namespace selic
             #region Brazil's interest rate average between 2012 and 2022
             var averageSelic = selic!.GetAverage(data);
 
-            Console.WriteLine($"\nA média da taxa Selic é {averageSelic}.");
+            Console.WriteLine($"\nBrazil's interest rate average between 2012 and 2022: {averageSelic}.");
             #endregion
 
             #region Months in which Brazil's interest rate has varied between 2012 and 2022
-            Console.WriteLine("\nA Selic sofreu variação nos seguintes meses: ");
+            Console.WriteLine("\nMonths in which Brazil's interest rate has varied between 2012 and 2022: ");
 
             var monthsInWhichSelicHasVaried = data.OrderBy(x => x.Date)
                 .Where((item, index) => index == 0 || item.SelicRate != data.ElementAt(index - 1).SelicRate)
@@ -58,7 +58,7 @@ namespace selic
                  })
                  .ToList();
 
-            Console.WriteLine("\nMédia da taxa Selic por trimestre desde 2016: ");
+            Console.WriteLine("\nBrazil's interest rate average per quarter since 2016: ");
             foreach (var quarter in quarters)
                 Console.WriteLine($"{quarter.Quarter}: {quarter.Average}");
             #endregion
